@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Instrument_Serif } from 'next/font/google';
 import "./globals.css";
+import ThemeWrapper from "./components/ThemeWrapper";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,8 +16,8 @@ const instrumentserif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "<NAOKI MIYAGAWA />",
-  description: "<NAOKI MIYAGAWA />",
+  title: "NAOKI MIYAGAWA",
+  description: "NAOKI MIYAGAWA",
 };
 
 export default function RootLayout({
@@ -27,7 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} *:antialiased`}>
-        {children}
+        <ThemeWrapper>
+          {children}
+        </ThemeWrapper>
       </body>
     </html>
   );
