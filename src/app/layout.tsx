@@ -1,14 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Instrument_Serif } from 'next/font/google';
+import { GeistSans } from 'geist/font/sans';
 import "./globals.css";
 import ThemeWrapper from "./components/ThemeWrapper";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
 
 const instrumentserif = Instrument_Serif({
   subsets: ["latin"],
@@ -16,8 +11,8 @@ const instrumentserif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "NAOKI MIYAGAWA",
-  description: "NAOKI MIYAGAWA",
+  title: "Naoki Miyagawa",
+  description: "Naoki Miyagawa",
 };
 
 export default function RootLayout({
@@ -27,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} *:antialiased`}>
+      <body className={`${GeistSans.className} *:antialiased`}>
         <ThemeWrapper>
           {children}
         </ThemeWrapper>
