@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.disable-animatons* {
+  animation: none !important;
+  transition: none !important;
+}
+
 .toDarkMode {
   animation: light-to-dark 0.7s linear 1;
 }
