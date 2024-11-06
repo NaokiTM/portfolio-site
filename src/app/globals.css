@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.toDarkMode {
+  animation: light-to-dark 0.7s linear 1;
+}
+
+.toLightMode {
+  animation: dark-to-light 0.7s linear 1;
+}
+
+@keyframes dark-to-light{
+  0% {
+    background-color: black;
+    color: white;
+  }
+  100% {
+    background-color: white;
+    color: black;
+  }
+}
+
+@keyframes light-to-dark {
+  0% {
+    background-color: white;
+    color: black;
+  }
+  100% {
+    background-color: black;
+    color: white;
+  }
+}
