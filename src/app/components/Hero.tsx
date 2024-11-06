@@ -8,11 +8,11 @@ export default function Hero() {
         <div className='flex flex-row'>
             <div className='flex flex-col'>
                 <div >
-                    <div className='mb-8 pl-2 font-medium tracking-tighter leading-none text-6xl'>
-                        <div className='-mb-4'>Naoki</div>
+                    <div className='mb-3 font-medium tracking-tighter leading-none text-6xl'>
+                        <div className='-mb-2'>Naoki</div>
                         <div>Miyagawa</div>
                     </div>
-                    <div className={`${instrumentserif.className} pl-5 text-5xl`}>
+                    <div className={`${instrumentserif.className} pl-1 text-3xl`}>
                         <div>I am a computer science student </div>
                         <div>passionate about (building) beautiful websites</div>
                         <div>and creating apps to solve fun problems.</div>
