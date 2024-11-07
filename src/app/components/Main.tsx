@@ -21,7 +21,7 @@ export default function Main() {
                 <div>┌────────────────────────────────────┐</div>
                 <div className='pl-6'>
                   <div>I prefer minimalistic practicality that maintains</div>
-                  <div>a high level of <div className={`${instrumentserif.className} inline-flex italic font-semibold tracking-tight`}>elegant</div> performance</div>
+                  <div>a high level of <div className={`${instrumentserif.className} inline-flex italic font-bold tracking-tight text-4xl pl-2 pr-2`}>elegant</div> performance</div>
                 </div>
                 <div>└────────────────────────────────────┘</div>
             </div>

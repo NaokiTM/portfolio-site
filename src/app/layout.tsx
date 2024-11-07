@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+
 import { Instrument_Serif } from 'next/font/google';
 import { GeistSans } from 'geist/font/sans';
 import "./globals.css";
-import ThemeWrapper from "./components/ThemeWrapper";
+import ThemeWrapper from "./contexts/ThemeWrapper";
 
 const instrumentserif = Instrument_Serif({
   subsets: ["latin"],
