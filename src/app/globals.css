@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.disable-animatons* {
+.enormous-text {
+  font-size: 130px;
+}
+
+.disable-animatons * {
   animation: none !important;
   transition: none !important;
 }
