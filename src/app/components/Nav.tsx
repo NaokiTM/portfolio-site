@@ -21,7 +21,7 @@ export default function Nav() {
   return (
       <div className={`text-4xl`}>
           <nav className={`space-y-5 p-20 flex flex-col justify-center font-medium top-0 border-r-2 sticky h-screen`}>
-              <div onMouseEnter={() => setHomeHovered(true)} onMouseLeave={() => setHomeHovered(false)} >
+              <div onMouseEnter={() => setHomeHovered(true)} onMouseLeave={() => setHomeHovered(false)}>
                 <FiHome />
               </div>
               <div onMouseEnter={() => setUserHovered(true)} onMouseLeave={() => setUserHovered(false)}>
