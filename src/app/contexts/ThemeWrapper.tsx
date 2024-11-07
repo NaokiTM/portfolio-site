@@ -1,8 +1,7 @@
 'use client'
-import React from 'react'
-import { createContext, useContext, useState } from 'react';
-import { FaRegMoon } from "react-icons/fa";
+import React, { createContext, useContext, useState } from 'react';
 
+const ThemeContext = createContext<any>(undefined);
 
 export default function ThemeWrapper({children, }: Readonly<{ children: React.ReactNode; }>) {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -15,12 +14,17 @@ export default function ThemeWrapper({children, }: Readonly<{ children: React.Re
 
   return (
     <>
-        <div className={`${isDarkMode ? "bg-black text-white" : "bg-white text-black"} ${animate ? (isDarkMode ? "toDarkMode" : "toLightMode") : ""}`}>
-            {children}
-            <div className='w-100 flex justify-end sticky bottom-0 bg-opacity-0'> 
-                <button className='p-4 bg-opacity-0' onClick={toggleDarkMode}><FaRegMoon className='h-[25px] w-[25px]'/></button>
-            </div>
+      <ThemeContext.Provider value={{ isDarkMode, toggleDarkMode, animate }}>
+        <div
+          className={`${isDarkMode ? 'bg-black text-white' : 'bg-white text-black'} ${
+            animate ? (isDarkMode ? 'toDarkMode' : 'toLightMode') : ''
+          }`}
+        >
+          {children}
         </div>
+      </ThemeContext.Provider>
     </>
   )
 }
+
+export const useTheme = () => useContext(ThemeContext);
