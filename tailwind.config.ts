@@ -9,6 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        "reactBlue":"#61DBFB",
+        "linuxYellow":"#FFCC33",
+        "tailwindBlue":"#06b6d4",
+        "gitOrange":"#F1502F",
+        "javaOrange":"#f89820",
+        "typescriptBlue":"#007acc",
+        "javaBlue":"#5382a1"
       },
     },
   },
