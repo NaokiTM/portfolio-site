@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import { useRef } from 'react';
 import { instrumentserif } from '../layout'
 import { FiHome } from "react-icons/fi";
 import { FiUser } from "react-icons/fi";
@@ -9,36 +10,29 @@ import { FiSmile } from "react-icons/fi";
 import { FiNavigation } from "react-icons/fi";
 import { useState } from 'react';
 
-export default function NavBar() {
-  const [homeHovered, setHomeHovered] = useState<boolean>(false);
-  const [userHovered, setUserHovered] = useState<boolean>(false);
-  const [boxHovered, setBoxHovered] = useState<boolean>(false);
-  const [briefcaseHovered, setBriefcaseHovered] = useState<boolean>(false);
-  const [smileHovered, setSmileHovered] = useState<boolean>(false);
-  const [navigationHovered, setNavigationHovered] = useState<boolean>(false);
+interface NavbarProps {
+  scrollTo: (section: string) => void
+}
 
-
+export default function NavBar({ scrollTo}: NavbarProps) {
   return (
       <div className={`text-4xl`}>
           <nav className={`space-y-5 p-20 flex flex-col justify-center font-medium top-0 border-r-2 sticky h-screen`}>
-              <div onMouseEnter={() => setHomeHovered(true)} onMouseLeave={() => setHomeHovered(false)}>
+              <button onClick={() => scrollTo('hero')}>
                 <FiHome />
-              </div>
-              <div onMouseEnter={() => setUserHovered(true)} onMouseLeave={() => setUserHovered(false)}>
-                <FiUser />
-              </div>
-              <div onMouseEnter={() => setBoxHovered(true)} onMouseLeave={() => setBoxHovered(false)}>
+              </button>
+              <button onClick={() => scrollTo('projects')}>
                 <FiBox />
-              </div>
-              <div onMouseEnter={() => setBriefcaseHovered(true)} onMouseLeave={() => setBriefcaseHovered(false)}>
+              </button>
+              <button onClick={() => scrollTo('experience')}>
                 <FiBriefcase />
-              </div>
-              <div onMouseEnter={() => setSmileHovered(true)} onMouseLeave={() => setSmileHovered(false)}>
+              </button>
+              <button onClick={() => scrollTo('interests')}>
                 <FiSmile /> 
-              </div>
-              <div onMouseEnter={() => setNavigationHovered(true)} onMouseLeave={() => setHomeHovered(false)}>
+              </button>
+              <button onClick={() => scrollTo('contact')}>
                 <FiNavigation />
-              </div>
+              </button>
           </nav>
       </div>
   )

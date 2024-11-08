@@ -10,10 +10,10 @@ const instrumentserif = Instrument_Serif({
   weight: "400",
 });
 
-export const metadata: Metadata = {
-  title: "Naoki Miyagawa",
-  description: "Naoki Miyagawa",
-};
+// export const metadata: Metadata = {
+//   title: "Naoki Miyagawa",
+//   description: "Naoki Miyagawa",
+// };
 
 export default function RootLayout({
   children,
