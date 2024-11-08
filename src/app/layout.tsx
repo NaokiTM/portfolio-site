@@ -10,6 +10,12 @@ const instrumentserif = Instrument_Serif({
   weight: "400",
 });
 
+const instrumentserifitalic = Instrument_Serif({
+  subsets: ["latin"],
+  weight: "400",
+  style: "italic",
+});
+
 // export const metadata: Metadata = {
 //   title: "Naoki Miyagawa",
 //   description: "Naoki Miyagawa",
@@ -32,3 +38,4 @@ export default function RootLayout({
 }
 
 export { instrumentserif };
+export { instrumentserifitalic }

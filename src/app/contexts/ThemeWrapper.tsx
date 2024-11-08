@@ -4,7 +4,7 @@ import React, { createContext, useContext, useState } from 'react';
 const ThemeContext = createContext<any>(undefined);
 
 export default function ThemeWrapper({children, }: Readonly<{ children: React.ReactNode; }>) {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
   const [animate, setAnimate] = useState(false);
 
   const toggleDarkMode = () => {

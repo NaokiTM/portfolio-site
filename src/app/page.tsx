@@ -25,6 +25,9 @@ export default function Home() {
         case 'projects':
           ref = projectsRef
           break
+        case 'experience':
+          ref = experienceRef
+          break;
         case 'interests':
           ref = interestsRef
           break
@@ -43,8 +46,8 @@ export default function Home() {
   return (
     <div className="flex justify-between">
       <Navbar scrollTo={scrollTo}/>
+
       <div className='flex p-16 flex-col'>
-        <div className=''>
           <div ref = {heroRef}>
              <Hero />
           </div>
@@ -60,8 +63,8 @@ export default function Home() {
           <div ref = {contactRef}>
             <Contact /> 
           </div>
-        </div>
       </div>
+
       <ContactBar />
     </div>
   );
