@@ -2,6 +2,7 @@ import React from 'react'
 import { instrumentserif } from '../../layout'
 import { instrumentserifitalic } from '../../layout';
 import DarkModeButton from '../../components/common/DarkModeButton';
+import MoonOrSun from '../common/MoonOrSun';
 
 export default function Hero() {
 
@@ -21,7 +22,7 @@ export default function Hero() {
       </div>
 
       <div className='text-3xl leading-tight tracking-tighter font-medium pt-8 pb-8 -ml-1'>
-          <div>┌─────────────────────────────────────┐</div>
+          <div>┌────────────────────────<div className='inline-flex font-mono text-sm font-semibold leading-none tracking-tighter pl-4 pr-3'>Try clicking the <MoonOrSun /></div>─┐</div>
           <div className='pl-7'>
             <div>. . . A computer science student </div>
             <div>passionate about (building) beautiful websites</div>

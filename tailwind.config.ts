@@ -9,7 +9,6 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'orange': 'rgb(255, 64, 0)',
       },
     },
   },
