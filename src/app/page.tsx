@@ -5,14 +5,14 @@ import ContactBar from "./components/ContactBar";
 
 import Hero from "./components/content/Hero";
 import Projects from "./components/content/Projects";
-import Experience from "./components/content/Experience";
+import Skillset from "./components/content/Skillset";
 import Interests from "./components/content/Interests";
 import Contact from "./components/content/Contact";
 
 export default function Home() {
     const heroRef = useRef<HTMLDivElement>(null)
     const projectsRef = useRef<HTMLDivElement>(null)
-    const experienceRef = useRef<HTMLDivElement>(null)
+    const skillsetRef = useRef<HTMLDivElement>(null)
     const interestsRef = useRef<HTMLDivElement>(null)
     const contactRef = useRef<HTMLDivElement>(null)
   
@@ -25,8 +25,8 @@ export default function Home() {
         case 'projects':
           ref = projectsRef
           break
-        case 'experience':
-          ref = experienceRef
+        case 'skillset':
+          ref = skillsetRef
           break;
         case 'interests':
           ref = interestsRef
@@ -55,8 +55,8 @@ export default function Home() {
           <div ref = {projectsRef}>
             <Projects />
           </div>
-          <div ref = {experienceRef}>
-            <Experience />
+          <div ref = {skillsetRef}>
+            <Skillset />
           </div>
           <div ref = {interestsRef}>
             <Interests />
