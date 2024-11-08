@@ -9,7 +9,7 @@ import { FiSmile } from "react-icons/fi";
 import { FiNavigation } from "react-icons/fi";
 import { useState } from 'react';
 
-export default function Nav() {
+export default function NavBar() {
   const [homeHovered, setHomeHovered] = useState<boolean>(false);
   const [userHovered, setUserHovered] = useState<boolean>(false);
   const [boxHovered, setBoxHovered] = useState<boolean>(false);

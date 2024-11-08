@@ -1,8 +1,7 @@
 'use client'
 import React from 'react'
-import { useTheme } from '../contexts/ThemeWrapper';
+import { useTheme } from '../../contexts/ThemeWrapper';
 import { FaRegMoon } from "react-icons/fa6";
-import { ImSun } from "react-icons/im";
 import { FaRegSun } from "react-icons/fa";
 
 export default function DarkModeButton() {

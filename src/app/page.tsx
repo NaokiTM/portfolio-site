@@ -1,13 +1,13 @@
 import Main from "./components/Main";
-import Nav from "./components/Nav";
-import Contacts from "./components/Contacts";
+import Navbar from "./components/Navbar";
+import ContactBar from "./components/ContactBar";
 
 export default function Home() {
   return (
     <div className="flex justify-between">
-      <Nav />
+      <Navbar />
       <Main />
-      <Contacts />
+      <ContactBar />
     </div>
   );
 }
