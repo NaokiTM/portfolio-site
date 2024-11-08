@@ -7,10 +7,10 @@ function Contacts() {
   return (
     <div className={`text-4xl`}>
         <div className={`space-y-5 flex p-20 flex-col font-medium sticky h-screen items-center justify-center top-0 border-l-2`}>
-            <a href = 'https://github.com/NaokiTM'>
+            <a href = 'https://github.com/NaokiTM' target='_blank' rel='noopener noreferrer'>
               <FiGithub />
             </a>
-            <a href = 'https://www.linkedin.com/in/naoki-miyagawa-1234b8333/'>
+            <a href = 'https://www.linkedin.com/in/naoki-miyagawa-1234b8333/' target='_blank' rel='noopener noreferrer'>
               <FiLinkedin />
             </a>
         </div>
