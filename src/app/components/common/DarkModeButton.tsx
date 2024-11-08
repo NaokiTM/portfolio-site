@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { useTheme } from '../../contexts/ThemeWrapper';
+import { useTheme } from '../../contexts/ThemeContext';
 import { FaRegMoon } from "react-icons/fa6";
 import { FaRegSun } from "react-icons/fa";
 

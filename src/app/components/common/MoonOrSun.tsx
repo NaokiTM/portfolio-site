@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { useTheme } from '../../contexts/ThemeWrapper';
+import { useTheme } from '../../contexts/ThemeContext';
 
 export default function MoonOrSun() {
   const { isDarkMode } = useTheme();

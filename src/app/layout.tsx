@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Instrument_Serif } from 'next/font/google';
 import { GeistSans } from 'geist/font/sans';
 import "./globals.css";
-import ThemeWrapper from "./contexts/ThemeWrapper";
+import ThemeContext from "./contexts/ThemeContext";
 
 const instrumentserifitalic = Instrument_Serif({
   subsets: ["latin"],
@@ -11,10 +11,10 @@ const instrumentserifitalic = Instrument_Serif({
   style: "italic",
 });
 
-// export const metadata: Metadata = {
-//   title: "Naoki Miyagawa",
-//   description: "Naoki Miyagawa",
-// };
+export const metadata: Metadata = {
+  title: "Naoki Miyagawa",
+  description: "Naoki Miyagawa",
+};
 
 export default function RootLayout({
   children,
@@ -24,9 +24,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${GeistSans.className} *:antialiased`}>
-        <ThemeWrapper>
+        <ThemeContext>
           {children}
-        </ThemeWrapper>
+        </ThemeContext>
       </body>
     </html>
   );
