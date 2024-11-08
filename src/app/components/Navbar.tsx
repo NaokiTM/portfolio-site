@@ -20,7 +20,7 @@ export default function NavBar({ scrollTo}: NavbarProps) {
               <button onClick={() => scrollTo('projects')}>
                 <FiBox />
               </button>
-              <button onClick={() => scrollTo('experience')}>
+              <button onClick={() => scrollTo('skillset')}>
                 <FiBriefcase />
               </button>
               <button onClick={() => scrollTo('interests')}>

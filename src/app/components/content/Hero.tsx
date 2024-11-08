@@ -23,7 +23,7 @@ export default function Hero() {
       <div className='text-3xl leading-tight tracking-tighter font-medium pt-8 pb-8 -ml-1'>
           <div>┌────────────────────────<div className='inline-flex font-mono text-sm font-semibold leading-none tracking-tighter pl-4 pr-3'>Try clicking the <MoonOrSun /></div>─┐</div>
           <div className='pl-7'>
-            <div>. . . A computer science student </div>
+            <div>A computer science student </div>
             <div>passionate about (building) beautiful websites</div>
             <div>and creating apps that solve fun problems.</div>
           </div>

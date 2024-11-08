@@ -2,7 +2,6 @@ import React from 'react'
 import StackIcon from 'tech-stack-icons'
 import { instrumentserifitalic } from '@/app/layout'
 import { GeistSans } from 'geist/font/sans';
-import skillsetInfo from '../../../../public/skillsetInfo.json'
 
 
 export default function Skillset() {
@@ -11,52 +10,52 @@ export default function Skillset() {
       <div className={`leading-none tracking-tighter font-semibold text-7xl mb-12 flex flex-col space-y-2`}>Skillset: </div>
 
       <div className='flex flex-row items-center mb-12'>
-        <StackIcon name="reactjs" className='w-[80px] h-[80px] flex-shrink-0 mr-4'/>
-        <div className='flex'>
-          <div className={`text-sm ${GeistSans.className}`}><div className={`${instrumentserifitalic.className} text-4xl inline-flex`}>React...</div>{skillsetInfo.reactText}</div>
-        </div>
+          <StackIcon name="reactjs" className='w-[80px] h-[80px] flex-shrink-0 mr-4'/>
+          <div className='flex'>
+              <div className={`text-sm`}><div className={`text-4xl leading-none font-semibold tracking-tighter inline-flex mr-2`}>React:</div>I have about a years experince using React for personal use. I have built my best projects using React, because of its front end heavy focus, ease of use, and how organised it is. I have so far covered basic topics such as <b>JSX, ternary operators (especially for conditonal JSX rendering and styling), states and effects</b>, and have started learning <b>refs and contexts.</b></div>
+          </div>
       </div>
 
       <div className='flex flex-row items-center mb-12'>
-        <StackIcon name="nextjs2" className='w-[80px] h-[80px] flex-shrink-0 mr-4'/>
-        <div className='flex'>
-          <div className={`text-sm ${GeistSans.className}`}><div className={`${instrumentserifitalic.className} text-4xl inline-flex`}>Next...</div>{skillsetInfo.nextText}</div>
-        </div>
+          <StackIcon name="nextjs2" className='w-[80px] h-[80px] flex-shrink-0 mr-4'/>
+          <div className='flex'>
+              <div className={`text-sm`}><div className={`text-4xl leading-none font-semibold tracking-tighter inline-flex mr-2`}>Next:</div>My React projects often incorporate Next.js as a framework, because of its popularity and server side rendering capabilities. I have been using Next since Next 14 was released, and I am currently still in the learning process. I have a general understanding of <b>client and server components, routes, the layout page,</b> and I often use Next because I like Vercels Geist font (which can't be used with any other framework, unfortunately)</div>
+          </div>
       </div>
 
       <div className='flex flex-row items-center mb-12'>
-        <StackIcon name="linux" className='w-[80px] h-[80px] flex-shrink-0 mr-4'/>
-        <div className='flex'>
-          <div className={`text-sm ${GeistSans.className}`}><div className={`${instrumentserifitalic.className} text-4xl inline-flex`}>Linux...</div>{skillsetInfo.linuxText}</div>
-        </div>
+          <StackIcon name="linux" className='w-[80px] h-[80px] flex-shrink-0 mr-4'/>
+          <div className='flex'>
+              <div className={`text-sm`}><div className={`text-4xl leading-none font-semibold tracking-tighter inline-flex mr-2`}>Linux:</div>Linux Mint has been my go-to OS for around 3 years. Although Mint has been my favourite due to it's simple learning curve, I have also tried out <b>Manjaro and Void linux.</b> However the lack of support for these distros has put me off from using them long term. I have a lot of experience with the <b>i3-gaps window manager,</b> and configuring it. I am also very familiar with <b>Bash,</b> since I use it on my main computer and have used it for a module in my first year</div>
+          </div>
+      </div>
+ 
+      <div className='flex flex-row items-center mb-12'>
+          <StackIcon name="tailwindcss" className='w-[80px] h-[80px] flex-shrink-0 mr-4'/>
+          <div className='flex'>
+              <div className={`text-sm`}><div className={`text-4xl leading-none font-semibold tracking-tighter inline-flex mr-2`}>Tailwind:</div>is one of my absolute favourite technologies to use in my web apps, because of how easy it is to learn and use. It also comes as a default package installed with many major React frameworks, which is helpful for me as I tend to use frameworks far more than I use vanilla Javascript. I have an understanding of <b>adding custom configurations to tailwind.config,</b> and <b>I have memorised a good amount of the most popular utility classes</b> (with my <b>favourite CSS tool being flexbox</b>). I am hoping to learn about the grid utility more in depth. </div>
+          </div>
       </div>
 
       <div className='flex flex-row items-center mb-12'>
-        <StackIcon name="tailwindcss" className='w-[80px] h-[80px] flex-shrink-0 mr-4'/>
-        <div className='flex'>
-          <div className={`text-sm ${GeistSans.className}`}><div className={`${instrumentserifitalic.className} text-4xl inline-flex`}>Tailwind...</div>{skillsetInfo.tailwindText}</div>
-        </div>
+          <StackIcon name="git" className='w-[80px] h-[80px] flex-shrink-0 mr-4'/>
+          <div className='flex'>
+              <div className={`text-sm`}><div className={`text-4xl leading-none font-semibold tracking-tighter inline-flex mr-2`}>Git:</div>Git and Github are incredibly useful tools for me, and I have a basic understanding of its commands (<b>staging, commiting, pushing, cloning, changing remote url</b>), and am still in the process of <b>learning pulls, pull requests, and branching + merging.</b></div>
+          </div>
       </div>
 
       <div className='flex flex-row items-center mb-12'>
-        <StackIcon name="git" className='w-[80px] h-[80px] flex-shrink-0 mr-4'/>
-        <div className='flex'>
-          <div className={`text-sm ${GeistSans.className}`}><div className={`${instrumentserifitalic.className} text-4xl inline-flex`}>Git...</div>{skillsetInfo.gitText}</div>
-        </div>
+          <StackIcon name="java" className='w-[80px] h-[80px] flex-shrink-0 mr-4'/>
+          <div className='flex'>
+              <div className={`text-sm`}><div className={`text-4xl leading-none font-semibold tracking-tighter inline-flex mr-2`}>Java:</div>I have used Java since the start of my degree, so for around a year consistently. I have an understanding of <b>classes, interfaces, Javadoc, Intellij, enums, and most basic OOP concepts</b>. I have also <b>used Junit 5 tests before</b>, however I haven't written any myself as of now.</div>
+          </div>
       </div>
 
       <div className='flex flex-row items-center mb-12'>
-        <StackIcon name="java" className='w-[80px] h-[80px] flex-shrink-0 mr-4'/>
-        <div className='flex'>
-          <div className={`text-sm ${GeistSans.className}`}><div className={`${instrumentserifitalic.className} text-4xl inline-flex`}>Java...</div>{skillsetInfo.javaText}</div>
-        </div>
-      </div>
-      
-      <div className='flex flex-row items-center mb-12'>
-        <StackIcon name="typescript" className='w-[80px] h-[80px] flex-shrink-0 mr-4'/>
-        <div className='flex'>
-          <div className={`text-sm ${GeistSans.className}`}><div className={`${instrumentserifitalic.className} text-4xl inline-flex`}>Typescript...</div>{skillsetInfo.typescriptText}</div>
-        </div>
+          <StackIcon name="typescript" className='w-[80px] h-[80px] flex-shrink-0 mr-4'/>
+          <div className='flex'>
+              <div className={`text-sm`}><div className={`text-4xl leading-none font-semibold tracking-tighter inline-flex mr-2`}>Typescript:</div>I picked up Typescript because of it's popularity in industry and convinient type checking at compile time. I am still new to typescript, and therefore <b>still currently learning about types, interfaces, and generics</b></div>
+          </div>
       </div>
     </div>
   )
