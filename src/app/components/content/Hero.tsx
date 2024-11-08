@@ -1,5 +1,4 @@
 import React from 'react'
-import { instrumentserif } from '../../layout'
 import { instrumentserifitalic } from '../../layout';
 import DarkModeButton from '../../components/common/DarkModeButton';
 import MoonOrSun from '../common/MoonOrSun';

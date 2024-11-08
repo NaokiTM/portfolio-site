@@ -1,14 +1,10 @@
 'use client'
 import React from 'react'
-import { useRef } from 'react';
-import { instrumentserif } from '../layout'
 import { FiHome } from "react-icons/fi";
-import { FiUser } from "react-icons/fi";
 import { FiBox } from "react-icons/fi";
 import { FiBriefcase } from "react-icons/fi";
 import { FiSmile } from "react-icons/fi";
 import { FiNavigation } from "react-icons/fi";
-import { useState } from 'react';
 
 interface NavbarProps {
   scrollTo: (section: string) => void

@@ -48,7 +48,8 @@ export default function Home() {
       <Navbar scrollTo={scrollTo}/>
 
       <div className='flex p-16 flex-col'>
-          <div ref = {heroRef}>
+          <div className='absolute top-0 left-0' ref = {heroRef}></div>
+          <div>
              <Hero />
           </div>
           <div ref = {projectsRef}>

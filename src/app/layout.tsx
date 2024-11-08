@@ -5,11 +5,6 @@ import { GeistSans } from 'geist/font/sans';
 import "./globals.css";
 import ThemeWrapper from "./contexts/ThemeWrapper";
 
-const instrumentserif = Instrument_Serif({
-  subsets: ["latin"],
-  weight: "400",
-});
-
 const instrumentserifitalic = Instrument_Serif({
   subsets: ["latin"],
   weight: "400",
@@ -37,5 +32,5 @@ export default function RootLayout({
   );
 }
 
-export { instrumentserif };
 export { instrumentserifitalic }
+
