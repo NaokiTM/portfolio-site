@@ -2,6 +2,9 @@
 
 Welcome to my portfolio site repository! This project is built using Next.js and Tailwind CSS, showcasing my skills, projects, and experiences.
 
+NOTE: This project is still a work in progress, as I had some issues with displaying SVG's, and I have yet to add a dedicated email form. 
+However, My contact links such as my Github and Linkedin are still accessible. 
+
 ## Table of Contents
 
 - [Features](#features)
@@ -46,6 +49,8 @@ npm run dev
 ```
 
 This will start the Next.js development server. Open [http://localhost:3000](http://localhost:3000) in your browser to view the site. The page will automatically reload if you make changes to the code.
+
+localhost won't run if there are fields in next.config.ts, so comment out the content in next config before testing locally. add it back in when building / deploying (This was the case on my computer, may not be the same on yours)
 
 ## Building for Production
 
