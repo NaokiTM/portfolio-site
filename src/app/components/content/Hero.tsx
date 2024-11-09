@@ -1,6 +1,13 @@
 import React from 'react'
 import DarkModeButton from '../../components/common/DarkModeButton';
 import MoonOrSun from '../common/MoonOrSun';
+import { Instrument_Serif } from 'next/font/google';
+
+const instrumentSerif = Instrument_Serif({
+  subsets: ['latin'], // adjust subsets as needed
+  weight: ['400'],    // adjust weights as needed (e.g., 400 for regular)
+  style: ['italic'], // choose italic or normal styles if available
+});
 
 export default function Hero() {
 
@@ -28,7 +35,7 @@ export default function Hero() {
           </div>
           <div className='pl-7'>
             <div className='-mb-1'>I prefer minimalistic practicality that maintains</div>
-              <div>a high level of <div className={`instrument-serif-italic inline-flex tracking-tight font-semibold text-4xl pl-1 pr-1`}>elegant</div> performance</div>
+              <div>a high level of <div className={`${instrumentSerif.className} inline-flex tracking-tight font-semibold text-4xl pl-1 pr-1`}>elegant</div> performance</div>
           </div>
           <div>└─────────────────────────────────────┘</div>
       </div>

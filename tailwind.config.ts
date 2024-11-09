@@ -17,6 +17,9 @@ const config: Config = {
         "typescriptBlue":"#007acc",
         "javaBlue":"#5382a1"
       },
+      fontFamily: {
+        'instrument-serif': ['Instrument Serif', 'serif'],
+      },
     },
   },
   plugins: [],
