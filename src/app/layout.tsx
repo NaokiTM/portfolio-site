@@ -1,5 +1,3 @@
-import type { Metadata } from "next";
-
 import { Instrument_Serif } from 'next/font/google';
 import { GeistSans } from 'geist/font/sans';
 import "./globals.css";
@@ -10,11 +8,6 @@ const instrumentserifitalic = Instrument_Serif({
   weight: "400",
   style: "italic",
 });
-
-export const metadata: Metadata = {
-  title: "Naoki Miyagawa",
-  description: "Naoki Miyagawa",
-};
 
 export default function RootLayout({
   children,

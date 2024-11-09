@@ -7,7 +7,7 @@ export default function Interests() {
       <div className={`leading-none tracking-tighter font-semibold text-7xl pb-8`}>Interests:</div>
       
       <div className='flex mb-12'>
-          <div className={`text-lg`}><div className={`${instrumentserifitalic.className} text-gitOrange text-4xl inline-flex`}>Guitar...</div>I have been playing guitar since I was quite young, and have still not grown old of it. I have achived Rockschool<b className='text-gitOrange'>grade 3 in electric guitar and grade 5 in acoustic.</b> I mainly enjoy metal music and electric guitar, but I can play some songs on acoustic too when needed.</div>
+          <div className={`text-lg`}><div className={`${instrumentserifitalic.className} text-gitOrange text-4xl inline-flex`}>Guitar...</div>I have been playing guitar since I was quite young, and have still not grown old of it. I have achived Rockschool <b className='text-gitOrange'>grade 3 in electric guitar and grade 5 in acoustic.</b> I mainly enjoy metal music and electric guitar, but I can play some songs on acoustic too when needed.</div>
       </div>
 
       <div className='flex mb-12'>
