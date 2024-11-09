@@ -1,7 +1,13 @@
 'use client'
 import React, { createContext, useContext, useState } from 'react';
 
-const ThemeContext = createContext<any>(undefined);
+interface ThemeContextType {
+  isDarkMode: boolean;
+  toggleDarkMode: () => void;
+  animate: boolean;
+}
+
+const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export default function ThemeWrapper({children, }: Readonly<{ children: React.ReactNode; }>) {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -27,4 +33,10 @@ export default function ThemeWrapper({children, }: Readonly<{ children: React.Re
   )
 }
 
-export const useTheme = () => useContext(ThemeContext);
+export const useTheme = () => {
+  const context = useContext(ThemeContext);
+  if (!context) {
+    throw new Error("useTheme must be used within a ThemeWrapper");
+  }
+  return context;
+};

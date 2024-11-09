@@ -1,5 +1,4 @@
 import React from 'react'
-import { instrumentserifitalic } from '../../layout';
 import DarkModeButton from '../../components/common/DarkModeButton';
 import MoonOrSun from '../common/MoonOrSun';
 
@@ -10,7 +9,7 @@ export default function Hero() {
       <div className={`leading-none tracking-tighter enormous-text font-semibold ml-4 -mt-2`}>
         <div className='flex flex-row'>
           <div>
-            <div className='lg:-mb-3'>Hi. I'm</div>
+            <div className='lg:-mb-3'>Hi. I&apos;m</div>
             <div className='lg:-mb-3'>Naoki</div>
           </div>
           <div className='inline-flex ml-2'>
@@ -29,7 +28,7 @@ export default function Hero() {
           </div>
           <div className='pl-7'>
             <div className='-mb-1'>I prefer minimalistic practicality that maintains</div>
-              <div>a high level of <div className={`${instrumentserifitalic.className} inline-flex tracking-tight font-semibold text-4xl pl-1 pr-1`}>elegant</div> performance</div>
+              <div>a high level of <div className={`instrument-serif-italic inline-flex tracking-tight font-semibold text-4xl pl-1 pr-1`}>elegant</div> performance</div>
           </div>
           <div>└─────────────────────────────────────┘</div>
       </div>
