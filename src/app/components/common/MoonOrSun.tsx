@@ -6,11 +6,11 @@ export default function MoonOrSun() {
   const { isDarkMode } = useTheme();
 
   return (
-    <div className='pl-2'>
+    <div className='pl-2 inline-flex'>
       { isDarkMode ? 
-        <div>moon!</div>
+        <div>moon</div>
         :
-        <div className='pr-2'>sun!</div>
+        <div className='pr-2'>sun</div>
       }
     </div>
   )

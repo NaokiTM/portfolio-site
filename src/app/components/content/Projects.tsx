@@ -11,7 +11,8 @@ export default function Projects() {
   return (
     <div className=''>
         <div className={`leading-none tracking-tighter font-semibold text-7xl pb-8`}>Projects:</div>
-        <div className='flex flex-row align-top space-x-4'>
+        
+        <div className='flex flex-col lg:flex-row lg:space-x-8 space-y-8 lg:space-y-0'>
           <div className='flex flex-col'>
             <div className={`${instrumentSerif.className} text-4xl mb-2`}>Personal Website</div>
             <p>This was one of the more fun projects I got to build, since I get to build a site that has layouts, typography, and features that I personally like. This project was a way for me to get hands on experience with contexts and refs, both needed for the theme selector and scroll-to-component features. The positioning of the sticky sidebar was something that took trial and error, but taught me more about how different utility classes in tailwind work together or against each other. </p>
