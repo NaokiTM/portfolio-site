@@ -44,30 +44,30 @@ export default function Home() {
     }
   
   return (
-    <div className="flex justify-between">
+    <>
       <Navbar scrollTo={scrollTo}/>
 
-      <div className='flex p-16 flex-col'>
-          <div className='absolute top-0 left-0' ref = {heroRef}></div>
-          <div>
+      <main className="flex-grow overflow-y-auto p-4 lg:p-16">
+        <div className='flex flex-col space-y-16'>
+          <div ref={heroRef}>
              <Hero />
           </div>
-          <div ref = {projectsRef}>
+          <div ref={projectsRef}>
             <Projects />
           </div>
-          <div ref = {skillsetRef}>
+          <div ref={skillsetRef}>
             <Skillset />
           </div>
-          <div ref = {interestsRef}>
+          <div ref={interestsRef}>
             <Interests />
           </div>
-          <div ref = {contactRef}>
+          <div ref={contactRef}>
             <Contact /> 
           </div>
-      </div>
+        </div>
+      </main>
 
       <ContactBar />
-    </div>
+    </>
   );
 }
-
