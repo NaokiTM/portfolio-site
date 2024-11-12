@@ -12,7 +12,7 @@ interface NavbarProps {
 
 export default function NavBar({ scrollTo}: NavbarProps) {
   return (
-    <nav className="lg:w-24 flex-shrink-0 bg-black border-r-2 sticky top-0 lg:h-screen">
+    <nav className="lg:w-24 flex-shrink-0 bg-black lg:border-r-2 sticky top-0 lg:h-screen border-b-2 lg:border-b-0">
       <div className="flex lg:flex-col justify-around lg:justify-center items-center lg:h-full p-4 lg:p-0 lg:space-y-5">
         <button onClick={() => scrollTo('hero')} className="p-2">
           <FiHome className="text-2xl lg:text-4xl" />

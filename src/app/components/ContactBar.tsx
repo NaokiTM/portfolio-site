@@ -5,12 +5,12 @@ import { FiLinkedin } from "react-icons/fi";
 
 function Contacts() {
   return (
-    <div className={`text-4xl`}>
-        <div className={`space-y-5 flex p-20 flex-col font-medium sticky h-screen items-center justify-center top-0 border-l-2`}>
-            <a href = 'https://github.com/NaokiTM' target='_blank' rel='noopener noreferrer'>
+    <div className='lg:w-24 text-4xl flex-shrink-0 bg-black sticky top-0 sm:bottom-0 lg:h-screen lg:border-l-2 border-t-2 lg:border-t-0'>
+      <div className="flex lg:flex-col justify-around lg:justify-center items-center lg:h-full p-4 lg:p-0 lg:space-y-5">
+            <a href = 'https://github.com/NaokiTM' target='_blank' rel='noopener noreferrer' className='p-2 text-2xl lg:text-4xl'>
               <FiGithub />
             </a>
-            <a href = 'https://www.linkedin.com/in/naoki-miyagawa-1234b8333/' target='_blank' rel='noopener noreferrer'>
+            <a href = 'https://www.linkedin.com/in/naoki-miyagawa-1234b8333/' target='_blank' rel='noopener noreferrer' className='p-2 text-2xl lg:text-4xl'>
               <FiLinkedin />
             </a>
         </div>
