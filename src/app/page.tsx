@@ -45,6 +45,7 @@ export default function Home() {
   
   return (
     <>
+    <div className='flex flex-col lg:flex-row min-h-screen'>
       <Navbar scrollTo={scrollTo}/>
 
       <main className="flex-grow overflow-y-auto p-4 lg:p-16">
@@ -68,6 +69,7 @@ export default function Home() {
       </main>
 
       <ContactBar />
+    </div>
     </>
   );
 }

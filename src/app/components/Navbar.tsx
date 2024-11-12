@@ -12,24 +12,24 @@ interface NavbarProps {
 
 export default function NavBar({ scrollTo}: NavbarProps) {
   return (
-      <div className={`text-4xl`}>
-          <nav className={`space-y-5 p-20 flex flex-col justify-center font-medium top-0 border-r-2 sticky h-screen`}>
-              <button onClick={() => scrollTo('hero')}>
-                <FiHome />
-              </button>
-              <button onClick={() => scrollTo('projects')}>
-                <FiBox />
-              </button>
-              <button onClick={() => scrollTo('skillset')}>
-                <FiBriefcase />
-              </button>
-              <button onClick={() => scrollTo('interests')}>
-                <FiSmile /> 
-              </button>
-              <button onClick={() => scrollTo('contact')}>
-                <FiNavigation />
-              </button>
-          </nav>
+    <nav className="lg:w-24 flex-shrink-0 bg-black border-r-2 sticky top-0 lg:h-screen">
+      <div className="flex lg:flex-col justify-around lg:justify-center items-center lg:h-full p-4 lg:p-0 lg:space-y-5">
+        <button onClick={() => scrollTo('hero')} className="p-2">
+          <FiHome className="text-2xl lg:text-4xl" />
+        </button>
+        <button onClick={() => scrollTo('projects')} className="p-2">
+          <FiBox className="text-2xl lg:text-4xl" />
+        </button>
+        <button onClick={() => scrollTo('skillset')} className="p-2">
+          <FiBriefcase className="text-2xl lg:text-4xl" />
+        </button>
+        <button onClick={() => scrollTo('interests')} className="p-2">
+          <FiSmile className="text-2xl lg:text-4xl" />
+        </button>
+        <button onClick={() => scrollTo('contact')} className="p-2">
+          <FiNavigation className="text-2xl lg:text-4xl" />
+        </button>
       </div>
+    </nav>
   )
 }
