@@ -1,6 +1,6 @@
 import React from 'react'
 import { Instrument_Serif } from 'next/font/google';
-import interests from '../../../../public/interests.json'
+import { interests } from '@/app/data/interests'
 
 const instrumentSerif = Instrument_Serif({
   subsets: ['latin'],
@@ -25,8 +25,8 @@ export default function Interests() {
           <div className={`text-lg`}><div className={`${instrumentSerif.className} text-green-600 text-4xl inline-flex`}>Hiking...</div>I have done most of my hiking as <b className='text-green-600'>part of my scout group,</b> which then led me to do the <b className='text-green-600'>Ten Tors challenge 3 times,</b> where teams of 6 hike across dartmoor at various distances in 2 days unaided. I have completed <b className='text-green-600'>35 and 45 miles,</b> and have <b className='text-green-600'>attempted 55 miles.</b> This event is what has <b className='text-green-600'>taught me most about teamwork,</b> where we would each have responsibilities such as <b className='text-green-600'>navigation and setting up camp throughout the day,</b> but also <b className='text-green-600'>responsibility for ourselves</b> by keeping hydrated and coming prepared for the ever-changing hostile weather patterns.</div>
       </div> */}
 
-      {interests.map(interest => 
-        <div key = {interest.id} className='flex mb-12'>
+      {interests.map((interest, i) => 
+        <div key = {i} className='flex mb-12'>
           <div className={`text-lg`}><div className={`${instrumentSerif.className} text-javaOrange text-4xl inline-flex`}>{interest.title}...</div>{interest.description}</div>
         </div>
       )}
