@@ -1,8 +1,6 @@
 import React from 'react'
 import { Instrument_Serif } from 'next/font/google';
 import { projects } from '@/app/data/ProjectsContent'
-import { FiUser } from 'react-icons/fi';
-import { BsKeyboard } from "react-icons/bs";
 
 
 const instrumentSerif = Instrument_Serif({
@@ -32,3 +30,5 @@ export default function Projects() {
     </div>
   )
 }
+
+//         hover:bg-[url('/path/to/image2.jpg')]
