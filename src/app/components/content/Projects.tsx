@@ -15,7 +15,7 @@ export default function Projects() {
         
           <div className='flex flex-col lg:flex-row lg:space-x-8 space-y-8 lg:space-y-0'>
             {projects.map((project, i) => 
-              <a key = {i} href = {project.ghlink} target="_blank" rel="noopener noreferrer" className='hover:scale-105 transition'>
+              <a key = {i} href = {project.ghlink} target="_blank" rel="noopener noreferrer" className='hover:scale-105 transition border-2 p-4 rounded-xl'>
                 <div className='flex flex-col'>
                   <div className={`${instrumentSerif.className} text-4xl mb-2`}>{project.title}</div>
                   <p>{project.description}</p>
