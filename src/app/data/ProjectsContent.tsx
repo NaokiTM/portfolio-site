@@ -1,6 +1,12 @@
+import { FiUser } from 'react-icons/fi';
+import { BsKeyboard } from "react-icons/bs";
+import { FaRegChessKnight } from "react-icons/fa6"
+
+
 export const projects = [
   {
     title: "Personal Website",
+    icon: (<FiUser className= 'text-4xl mb-2' />),
     ghlink: "https://github.com/NaokiTM/portfolio-site",
     description: (
       <>
@@ -10,6 +16,7 @@ export const projects = [
   },
   {
     title: "Knights tour autosolver",
+    icon: (<FaRegChessKnight className = 'text-4xl mb-2'/>),
     ghlink: "https://github.com/NaokiTM/knights-tour",
     description: (
       <>
@@ -19,6 +26,7 @@ export const projects = [
   },
   {
     title: "React Typing Game",
+    icon: (<BsKeyboard className = 'text-4xl mb-2' />),
     ghlink: "https://github.com/NaokiTM/TS-typing-game",
     description: (
       <>
