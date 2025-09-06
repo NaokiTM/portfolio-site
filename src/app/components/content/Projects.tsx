@@ -16,7 +16,40 @@ export default function Projects() {
         
           <div className='flex flex-col lg:flex-row lg:space-x-8 space-y-8 lg:space-y-0'>
             {projects.map((project, i) => 
-              <a key = {i} href = {project.ghlink} target="_blank" rel="noopener noreferrer" className='hover:scale-105 transition border-2 p-4 rounded-xl'>
+              <a  
+                key = {i} 
+                href = {project.ghlink} 
+                target="_blank" rel="noopener noreferrer" 
+                className={`border-2 p-4 rounded-xl hover:scale-105 transition`}
+                  style={{
+                    backgroundImage: "none", // no default image
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                onMouseEnter={e => {
+                  (e.currentTarget as HTMLElement).style.backgroundImage = `url("${project.bgscreen}")`; // hover image only
+                }}
+                onMouseLeave={e => {
+                  (e.currentTarget as HTMLElement).style.backgroundImage = "none"; // revert to no image
+                }}
+              >
+                <div 
+                  className='absolute z-0'
+                  style={{
+                      backgroundImage: "none", // no default image
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                  }}
+                  onMouseEnter={e => {
+                    (e.currentTarget as HTMLElement).style.backgroundImage = `url("${project.bgscreen}")`; // hover image only
+                  }}
+                  onMouseLeave={e => {
+                    (e.currentTarget as HTMLElement).style.backgroundImage = "none"; // revert to no image
+                  }}
+                >
+                  
+                </div>
+
                 <div className='flex flex-col'>
                   <div className='flex justify-between'>
                       <div className={`${instrumentSerif.className} text-4xl mb-2`}>{project.title}</div>
@@ -30,5 +63,3 @@ export default function Projects() {
     </div>
   )
 }
-
-//         hover:bg-[url('/path/to/image2.jpg')]
