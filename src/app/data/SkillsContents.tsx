@@ -1,6 +1,6 @@
 export const skills = [
   {
-    title: "Next",
+    title: "Next:",
     color: "text-4xl leading-none font-semibold tracking-tighter inline-flex mr-2",
     icon: "/next.svg",
     description: (
@@ -12,7 +12,7 @@ export const skills = [
     ),
   },
   {
-    title: "Git",
+    title: "Git:",
     color: "text-gitOrange text-4xl leading-none font-semibold tracking-tighter inline-flex mr-2",
     icon: "/git.svg",
     description: (
@@ -25,7 +25,7 @@ export const skills = [
     ),
   },
   {
-    title: "Java",
+    title: "Java:",
     color: "text-javaOrange text-4xl leading-none font-semibold tracking-tighter inline-flex mr-2",
     icon: "/java.svg",
     description: (
@@ -40,7 +40,7 @@ export const skills = [
     ),
   },
   {
-    title: "Linux",
+    title: "Linux:",
     color: "text-linuxYellow text-4xl leading-none font-semibold tracking-tighter inline-flex mr-2",
     icon: "/linux.svg",
     description: (
@@ -53,7 +53,7 @@ export const skills = [
     ),
   },
   {
-    title: "React",
+    title: "React:",
     color: "text-reactBlue text-4xl leading-none font-semibold tracking-tighter inline-flex mr-2",
     icon: "/react.svg",
     description: (
@@ -69,7 +69,7 @@ export const skills = [
     ),
   },
   {
-    title: "Tailwind",
+    title: "Tailwind:",
     color: "text-tailwindBlue text-4xl leading-none font-semibold tracking-tighter inline-flex mr-2",
     icon: "/tailwind.svg",
     description: (
@@ -82,7 +82,7 @@ export const skills = [
     ),
   },
   {
-    title: "Typescript",
+    title: "Typescript:",
     color: "text-typescriptBlue text-4xl leading-none font-semibold tracking-tighter inline-flex mr-2",
     icon: "/typescript.svg",
     description: (

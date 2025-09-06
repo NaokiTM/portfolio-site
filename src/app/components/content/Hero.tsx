@@ -39,7 +39,7 @@ export default function Hero() {
                 <div className='lg:-mb-3'>Hi. I&apos;m</div>
                 <div className='lg:-mb-3'>Naoki</div>
               </div>
-              <div className='inline-flex ml-2'>
+              <div className='inline-flex ml-2 hover:scale-110'>
                 <DarkModeButton />
               </div>
             </div>

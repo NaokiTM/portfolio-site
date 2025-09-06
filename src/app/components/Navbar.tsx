@@ -14,19 +14,19 @@ export default function NavBar({ scrollTo}: NavbarProps) {
   return (
     <nav className="lg:w-24 flex-shrink-0 bg-black text-white lg:border-r-2 sticky top-0 lg:h-screen border-b-2 lg:border-b-0">
       <div className="flex lg:flex-col justify-around lg:justify-center items-center lg:h-full p-4 lg:p-0 lg:space-y-5">
-        <button onClick={() => scrollTo('hero')} className="p-2">
+        <button onClick={() => scrollTo('hero')} className="p-2 hover:scale-125 transition">
           <FiHome className="text-2xl lg:text-4xl" />
         </button>
-        <button onClick={() => scrollTo('projects')} className="p-2">
+        <button onClick={() => scrollTo('projects')} className="p-2 hover:scale-125 transition">
           <FiBox className="text-2xl lg:text-4xl" />
         </button>
-        <button onClick={() => scrollTo('skillset')} className="p-2">
+        <button onClick={() => scrollTo('skillset')} className="p-2 hover:scale-125 transition">
           <FiBriefcase className="text-2xl lg:text-4xl" />
         </button>
-        <button onClick={() => scrollTo('interests')} className="p-2">
+        <button onClick={() => scrollTo('interests')} className="p-2 hover:scale-125 transition">
           <FiSmile className="text-2xl lg:text-4xl" />
         </button>
-        <button onClick={() => scrollTo('contact')} className="p-2">
+        <button onClick={() => scrollTo('contact')} className="p-2 hover:scale-125 transition">
           <FiNavigation className="text-2xl lg:text-4xl" />
         </button>
       </div>
