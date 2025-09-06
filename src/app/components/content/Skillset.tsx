@@ -1,5 +1,5 @@
 import React from 'react'
-import { skills } from '@/app/data/skills'
+import { skills } from '@/app/data/SkillsContents'
 
 export default function Skillset() {
   return (
@@ -19,8 +19,6 @@ export default function Skillset() {
             </div>
             </div>
         )}
-
-
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Instrument_Serif } from 'next/font/google';
-import { interests } from '@/app/data/interests'
+import { interests } from '@/app/data/InterestsContents'
 
 const instrumentSerif = Instrument_Serif({
   subsets: ['latin'],
@@ -27,7 +27,7 @@ export default function Interests() {
 
       {interests.map((interest, i) => 
         <div key = {i} className='flex mb-12'>
-          <div className={`text-lg`}><div className={`${instrumentSerif.className} text-javaOrange text-4xl inline-flex`}>{interest.title}...</div>{interest.description}</div>
+          <div className={`text-lg`}><div className={`${instrumentSerif.className} ${interest.color} text-4xl inline-flex`}>{interest.title}...</div>{interest.description}</div>
         </div>
       )}
     </div>
