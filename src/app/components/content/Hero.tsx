@@ -47,7 +47,7 @@ export default function Hero() {
           </div>
 
           <div className='text-3xl leading-tight tracking-tighter font-medium pt-8 pb-8 -ml-1'>
-            <div>┌────────────────────────<span className='inline-flex font-mono text-sm font-semibold leading-none tracking-tighter pl-4 pr-3'>Try clicking the <MoonOrSun /></span>─┐</div>
+            <div>┌──────────────────────── <span className='inline-flex font-mono text-sm font-semibold leading-none tracking-tighter pl-4 pr-3'>Try clicking the <MoonOrSun /></span> ─┐</div>
             <div className='pl-7'>
               <div>A computer science student </div>
               <div>passionate about (building) beautiful websites</div>
@@ -57,7 +57,7 @@ export default function Hero() {
               <div className='-mb-1'>I prefer minimalistic practicality that maintains</div>
               <div>a high level of <span className={`${instrumentSerif.className} inline-flex tracking-tight font-semibold text-4xl pl-1 pr-1`}>elegant</span> performance</div>
             </div>
-            <div>└─────────────────────────────────────┘</div>
+            <div>└─────────────────────────────────┘</div>
           </div>
         </>
       )}
