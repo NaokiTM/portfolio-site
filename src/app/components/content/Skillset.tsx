@@ -1,5 +1,6 @@
 import React from 'react'
 import { skills } from '@/app/data/SkillsContents'
+import Image from 'next/image'
 
 export default function Skillset() {
   return (
@@ -8,7 +9,7 @@ export default function Skillset() {
 
         {skills.map((skill, i) => 
             <div key = {i} className='flex flex-row items-center mb-12'>
-            {/* <img src="/next.svg" className='w-[80px] h-[80px] flex-shrink-0 mr-4'/> */}
+            <Image src={skill.icon} alt = {skill.title} width = {60} height = {60} className='flex-shrink-0 mr-4'/>
             <div className='flex'>
                 <div className={`text-md`}>
                     <div className={`${skill.color}`}>
