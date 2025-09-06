@@ -26,7 +26,7 @@ export default function Interests() {
       </div> */}
 
       {interests.map(interest => 
-        <div className='flex mb-12'>
+        <div key = {interest.id} className='flex mb-12'>
           <div className={`text-lg`}><div className={`${instrumentSerif.className} text-javaOrange text-4xl inline-flex`}>{interest.title}...</div>{interest.description}</div>
         </div>
       )}
