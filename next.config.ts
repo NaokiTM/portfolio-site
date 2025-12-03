@@ -1,8 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: '/portfolio-site',
-  assetPrefix: '/portfolio-site/public',
+  basePath: '',
+  assetPrefix: '',
   output: "export",
   reactStrictMode: true,
 };
