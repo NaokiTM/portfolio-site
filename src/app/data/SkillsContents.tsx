@@ -1,17 +1,5 @@
 export const skills = [
   {
-    title: "Next:",
-    color: "text-4xl leading-none font-semibold tracking-tighter inline-flex mr-2",
-    icon: "/next.svg",
-    description: (
-      <>
-        I have been using Next since Next 14 was released,
-        and I am currently still in the learning process. I have a basic understanding of{" "}
-        <b>client and server components, routes, and the layout page.</b>
-      </>
-    ),
-  },
-  {
     title: "Git:",
     color: "text-gitOrange text-4xl leading-none font-semibold tracking-tighter inline-flex mr-2",
     icon: "/git.svg",
@@ -82,18 +70,14 @@ export const skills = [
     ),
   },
   {
-    title: "Typescript:",
-    color: "text-typescriptBlue text-4xl leading-none font-semibold tracking-tighter inline-flex mr-2",
-    icon: "/typescript.svg",
+    title: "Kotlin:",
+    color: "text-purple-500 text-4xl leading-none font-semibold tracking-tighter inline-flex mr-2",
+    icon: "/kotlin.svg",
     description: (
       <>
-        I picked up Typescript because of its popularity in industry and convenient type checking at
-        compile time. I am still new to Typescript, and therefore{" "}
-        <b className="text-typescriptBlue">
-          still in the process of learning about types, interfaces, and generics
-        </b>
-        .
+        I have used Kotlin in my mobile development module to add features to an existing app (adding more of my experience in the future)
       </>
     ),
   },
+
 ];

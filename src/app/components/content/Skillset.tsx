@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function Skillset() {
   return (
     <div className=''>
-        <div className={`leading-none tracking-tighter font-semibold text-7xl mb-12 flex flex-col space-y-2`}>Skillset: </div>
+        <div className={`leading-none tracking-tighter font-semibold text-7xl mb-12 pt-14 flex flex-col space-y-2`}>Skillset: </div>
 
         {skills.map((skill, i) => 
             <div key = {i} className='flex flex-row items-center mb-12'>

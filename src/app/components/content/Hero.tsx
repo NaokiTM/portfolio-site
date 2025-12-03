@@ -4,6 +4,7 @@ import MoonOrSun from '@/app/components/common/MoonOrSun';
 import { Instrument_Serif } from 'next/font/google';
 import DeviceDetector from '@/app/components/DeviceDetector';
 
+
 const instrumentSerif = Instrument_Serif({
   subsets: ['latin'],
   weight: ['400'],
@@ -27,7 +28,7 @@ export default function Hero() {
           </div>
        
             <div className='text-3xl leading-tight tracking-tighter font-medium pt-8 pb-8 -ml-1'>
-              <div>A computer science student passionate about (building) beautiful websites and creating apps that solve fun problems. I prefer minimalistic practicality that maintains a high level of <span className={`${instrumentSerif.className} inline-flex tracking-tight font-semibold text-4xl pl-1 pr-1`}>elegant</span> performance (click on the<MoonOrSun/> to toggle theme).
+              <div>A computer science student passionate about building beautiful websites and creating apps that solve fun problems. I prefer minimalistic practicality that maintains a high level of <span className={`${instrumentSerif.className} inline-flex tracking-tight font-semibold text-4xl pl-1 pr-1`}>elegant</span> performance (click on the<MoonOrSun/> to toggle theme).
             </div>
           </div>
         </div>
@@ -48,14 +49,19 @@ export default function Hero() {
 
           <div className='text-3xl leading-tight tracking-tighter font-medium pt-8 pb-8 -ml-1'>
             <div>┌──────────────────────── <span className='inline-flex font-mono text-sm font-semibold leading-none tracking-tighter pl-4 pr-3'>Try clicking the <MoonOrSun /></span> ─┐</div>
-            <div className='pl-7'>
+            <div className='pl-8 mt-8'>
               <div>A computer science student </div>
               <div>passionate about (building) beautiful websites</div>
               <div>and creating apps that solve fun problems.</div>
             </div>
-            <div className='pl-7'>
+            <div className='pl-8'>
               <div className='-mb-1'>I prefer minimalistic practicality that maintains</div>
               <div>a high level of <span className={`${instrumentSerif.className} inline-flex tracking-tight font-semibold text-4xl pl-1 pr-1`}>elegant</span> performance</div>
+              <div className='mt-14 mb-14'>
+                <a href="/CV.pdf" download="Naoki_Miyagawa_CV.pdf" target="_blank" className='border-neutral-500 p-4 rounded-xl border-2'>
+                    Download My CV
+                </a>
+              </div>
             </div>
             <div>└─────────────────────────────────┘</div>
           </div>

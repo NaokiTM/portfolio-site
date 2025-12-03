@@ -1,8 +1,32 @@
 import { FiUser } from 'react-icons/fi';
 import { BsKeyboard } from "react-icons/bs";
 import { FaRegChessKnight } from "react-icons/fa6"
+import { FaMusic } from "react-icons/fa6";
+import { FaMoneyBillWave } from "react-icons/fa6";
 
 export const projects = [
+  {
+    title: "Tycoon game",
+    icon: (<FaMoneyBillWave className= 'text-4xl mb-2' />),
+    ghlink: "https://github.com/NaokiTM/portfolio-site",
+    bgscreen: "/projectscreenshots/game.png",
+    description: (
+      <>
+        A collaborative project between me and a friend. Aiming to fill the gap in online digital audio workstations. This project is still very work in progress due to the complexity, but some of the UI features are already working. 
+      </>
+    ),
+  },
+  {
+    title: "Online DAW",
+    icon: (<FaMusic className= 'text-4xl mb-2' />),
+    ghlink: "https://github.com/NaokiTM/portfolio-site",
+    bgscreen: "/projectscreenshots/daw.png",
+    description: (
+      <>
+        A collaborative project between me and a friend. Aiming to fill the gap in online digital audio workstations. This project is still very work in progress due to the complexity, but some of the UI features are already working. 
+      </>
+    ),
+  },
   {
     title: "Personal Website",
     icon: (<FiUser className= 'text-4xl mb-2' />),
@@ -18,7 +42,7 @@ export const projects = [
     title: "Knights tour autosolver",
     icon: (<FaRegChessKnight className = 'text-4xl mb-2'/>),
     ghlink: "https://github.com/NaokiTM/knights-tour",
-    bgscreen: "/projectscreenshots/knights.png",
+    bgscreen: "/projectscreenshots/chess.png",
     description: (
       <>
        An implementation of the Knights Tour puzzle, which I solve by using warnsdorffs rule (basically finds the move that has the smallest number of moves from it on the board). This rule was implemented by using nested loops to loop through each of the possible movesets, and iterating through the number of moves possible from that square.
