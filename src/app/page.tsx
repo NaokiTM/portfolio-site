@@ -46,7 +46,7 @@ export default function Home() {
     <div className='flex flex-col lg:flex-row min-h-screen'>
       <Navbar scrollTo={scrollTo}/>
 
-      <main className="flex-grow overflow-y-auto pb-8 pl-8 pr-8 lg:p-16">
+      <main className="flex-grow overflow-y-auto pl-8 lg:pb-16 lg:pr-16 lg:pl-16">
         <div className='flex flex-col space-y-16'>
           <div ref={heroRef} className=''>
              <Hero />
