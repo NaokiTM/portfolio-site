@@ -3,7 +3,6 @@ import React from 'react'
 import { FiHome } from "react-icons/fi";
 import { FiBox } from "react-icons/fi";
 import { FiBriefcase } from "react-icons/fi";
-import { FiSmile } from "react-icons/fi";
 import { FiNavigation } from "react-icons/fi";
 
 import { FiGithub } from "react-icons/fi";
