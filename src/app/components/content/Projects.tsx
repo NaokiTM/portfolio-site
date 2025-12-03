@@ -1,5 +1,4 @@
 import React from 'react'
-import { Instrument_Serif } from 'next/font/google';
 import { projects } from '@/app/data/ProjectsContent'
 
 
