@@ -49,7 +49,7 @@ export default function Contact() {
 
     </div>
   </div>
-  <div className='h-[300px]'>
+  <div className='h-[450px]'>
 
   </div>
 </div>

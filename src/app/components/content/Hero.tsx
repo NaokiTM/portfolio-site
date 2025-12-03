@@ -34,7 +34,7 @@ export default function Hero() {
         </div>
       ) : (
         <>
-          <div className="leading-none tracking-tighter enormous-text font-semibold ml-4 -mt-2">
+          <div className="leading-none tracking-tighter enormous-text font-semibold ml-4 mt-16">
             <div className='flex flex-row'>
               <div>
                 <div className='lg:-mb-3'>Hi. I&apos;m</div>
@@ -51,7 +51,7 @@ export default function Hero() {
             <div>┌──────────────────────── <span className='inline-flex font-mono text-sm font-semibold leading-none tracking-tighter pl-4 pr-3'>Try clicking the <MoonOrSun /></span> ─┐</div>
             <div className='pl-8 mt-8'>
               <div>A computer science student </div>
-              <div>passionate about (building) beautiful websites</div>
+              <div>passionate about building beautiful websites</div>
               <div>and creating apps that solve fun problems.</div>
             </div>
             <div className='pl-8'>
